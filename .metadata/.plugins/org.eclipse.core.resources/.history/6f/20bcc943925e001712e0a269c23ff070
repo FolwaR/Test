@@ -1,0 +1,46 @@
+//============================================================================
+// Name        : Pierwszy.cpp
+// Author      : £ukasz Folwarczyk
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+
+using namespace std;
+
+struct pudlo
+{
+	char producent[40];
+	float wyskosc;
+	float szerokosc;
+	float dlugosc;
+	float objetosc;
+};
+
+void display_st(const pudlo);
+
+
+int main()
+{
+	pudlo moje_pudlo {"Pudelek",10,11,50,20};
+
+	display_st(moje_pudlo);
+
+	return 0;
+}
+
+
+void display_st(const pudlo ele)
+{
+	cout << "Welcome in display_st function!"<<endl;
+	cout << "Your structure has elements as follows:\n";
+
+	cout <<"Name: "<<ele.producent<<endl;
+	cout <<"Height: "<<ele.wyskosc<<endl;
+	cout <<"Length: "<<ele.szerokosc<<endl;
+	cout <<"Width: "<<ele.dlugosc<<endl;
+	cout <<"Volume: "<<ele.objetosc<<endl;
+
+}

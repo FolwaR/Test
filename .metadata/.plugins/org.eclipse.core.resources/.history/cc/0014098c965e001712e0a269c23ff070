@@ -1,0 +1,36 @@
+
+
+#include <iostream>
+using namespace std;
+
+int fill_array(double *tab, int size);
+
+
+int main()
+{
+	const int MAX = 10;
+
+	double my_array[MAX];
+
+	cout << "Calling fill array function! "<<endl;
+	fill_array(my_array, MAX);
+
+	return 0;
+}
+
+int fill_array(double *tab, int size)
+{
+	int ile_elementow = 0;
+	int value = 0;
+
+	cout << "Prosze o podanie " <<ile_elementow <<" elementu: ";
+	while((cin>>value) && (ile_elementow < size))
+	{
+		ile_elementow++;
+		cout << "Prosze o podanie " <<ile_elementow <<" elementu: ";
+		*(tab + ile_elementow) = value;
+	}
+
+
+	return ile_elementow;
+}
