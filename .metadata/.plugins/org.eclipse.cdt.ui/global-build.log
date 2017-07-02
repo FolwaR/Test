@@ -1,2 +1,8 @@
-Info: Nothing to build for R7C66
-Info: Nothing to build for R7C66
+22:10:27 **** Incremental Build of configuration Debug for project R7C7 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\R7C7.o" "..\\src\\R7C7.cpp" 
+..\src\R7C7.cpp: In function 'int fill_array(double*, int)':
+..\src\R7C7.cpp:54:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+g++ -o R7C7.exe "src\\R7C7.o" 
