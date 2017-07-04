@@ -1,4 +1,5 @@
-21:24:02 **** Rebuild of configuration Debug for project Ile_wystapien_znaku ****
+21:47:27 **** Incremental Build of configuration Debug for project R7C8 ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ile_wystapien_znaku.o" "..\\src\\Ile_wystapien_znaku.cpp" 
-g++ -o Ile_wystapien_znaku.exe "src\\Ile_wystapien_znaku.o" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\R7C8.o" "..\\src\\R7C8.cpp" 
+g++ -o R7C8.exe "src\\R7C8.o" 
+Info: Nothing to build for R7C8

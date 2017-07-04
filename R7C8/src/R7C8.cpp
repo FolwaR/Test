@@ -7,35 +7,51 @@
 //============================================================================
 
 #include <iostream>
+#include <array>
+#include <string>
 
 using namespace std;
 
+const int Seasons = 4;
 
-char lancych[] = "AAAAAAAAAA";
-char znak = 'A';
+const array<string, Seasons> Snames {"Wiosna", "Lato", "Jesien", "Zima"};
 
-unsigned int funkcja(char *, char);
+void show(array<double, Seasons> ar);
+void fill(array<double, Seasons> * ar);
 
 int main()
 {
-	cout << "Wystapien: "<< funkcja(lancych, znak);
-	cout << endl;
+	array<double, Seasons> expenses;
+
+	fill(&expenses);
+	show(expenses);
 
 	return 0;
 }
 
 
-unsigned int funkcja(char * string, char my_char)
+void show(array<double, Seasons> ar)
 {
-	unsigned int ile = 0;
+	double total = 0.0;
 
-	while (*string != '\0')
+	cout << "\nWydatki\n";
+
+	for (int i = 0; i < Seasons; i++)
 	{
-		if(*string == my_char)
-			ile++;
+		cout << Snames[i] <<": "<<ar[i]<<" zl "<<endl;
+		total += ar[i];
+	}
+	cout <<"Total: "<<total<<endl;
+}
 
-		string++;
+
+void fill(array<double, Seasons> * ar)
+{
+	for (int i = 0; i < Seasons; i++)
+	{
+		cout << "Podaj wydatki za okres >>" << Snames[i] << "<<: ";
+		cin >> (*ar)[i];
 	}
 
-	return ile;
 }
+
