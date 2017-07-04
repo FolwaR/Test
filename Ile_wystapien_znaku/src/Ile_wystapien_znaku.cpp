@@ -1,4 +1,12 @@
 //============================================================================
+// Name        : Ile_wystapien_znaku.cpp
+// Author      : £ukasz Folwarczyk
+// Version     :
+// Copyright   : Spierdalaj
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+//============================================================================
 // Name        : R7C8.cpp
 // Author      : £ukasz Folwarczyk
 // Version     :
