@@ -1,5 +1,2 @@
-21:47:27 **** Incremental Build of configuration Debug for project R7C8 ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\R7C8.o" "..\\src\\R7C8.cpp" 
-g++ -o R7C8.exe "src\\R7C8.o" 
+Info: Nothing to build for R7C8
 Info: Nothing to build for R7C8

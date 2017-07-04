@@ -14,23 +14,23 @@ using namespace std;
 
 const int Seasons = 4;
 
-const array<string, Seasons> Snames {"Wiosna", "Lato", "Jesien", "Zima"};
+const char * pory_roku[] = {"Wiosna", "Lato", "Jesien", "Zima"};
 
-void show(array<double, Seasons> ar);
-void fill(array<double, Seasons> * ar);
+void show(double *ar);
+void fill(double *ar);
 
 int main()
 {
-	array<double, Seasons> expenses;
+	double expenses[Seasons];
 
-	fill(&expenses);
+	fill(expenses);
 	show(expenses);
 
 	return 0;
 }
 
 
-void show(array<double, Seasons> ar)
+void show(double *ar)
 {
 	double total = 0.0;
 
@@ -38,19 +38,19 @@ void show(array<double, Seasons> ar)
 
 	for (int i = 0; i < Seasons; i++)
 	{
-		cout << Snames[i] <<": "<<ar[i]<<" zl "<<endl;
+		cout << pory_roku[i] <<": "<<ar[i]<<" zl "<<endl;
 		total += ar[i];
 	}
 	cout <<"Total: "<<total<<endl;
 }
 
 
-void fill(array<double, Seasons> * ar)
+void fill(double *ar)
 {
 	for (int i = 0; i < Seasons; i++)
 	{
-		cout << "Podaj wydatki za okres >>" << Snames[i] << "<<: ";
-		cin >> (*ar)[i];
+		cout << "Podaj wydatki za okres >>" << pory_roku[i] << "<<: ";
+		cin >> ar[i];
 	}
 
 }
