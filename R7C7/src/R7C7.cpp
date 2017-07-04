@@ -12,19 +12,20 @@ using namespace std;
 
 const int MAX = 5;
 
-int fill_array(double ar[], int limit);
-void show_array(const double ar[], int n);
-void revalue(double r, double ar[], int n);
+double * fill_array(double *ar_pocz, double *ar_koniec);
+void show_array(const double *ar, const double *ar_kon);
+void revalue(double r, double *ar, double *ar_kon);
 
 
 int main() {
 
 	double propeties[MAX];
 
-	int size = fill_array(propeties, MAX);
-	show_array(propeties, size);
+	double *  arr_koniec = fill_array(propeties, (propeties+MAX));
 
-	if (size > 0)
+	show_array(propeties, arr_koniec);
+
+	if (propeties != arr_koniec)
 	{
 		cout << "Podaj czynnik zmiany wartosci: ";
 		double factor;
@@ -32,15 +33,13 @@ int main() {
 		while (!(cin >> factor))
 		{
 			cin.clear();
-			while (cin.get() != '\n'){
-				//continue;
-			}
+			while (cin.get() != '\n');
 
 			cout << "Niepoprawna wartosc, podaj liczbê: ";
 		}
 
-		revalue(factor, propeties, size);
-		show_array(propeties, size);
+		revalue(factor, propeties, arr_koniec);
+		show_array(propeties, arr_koniec);
 	}
 	cout << "Gotowe.\n";
 	cin.get();
@@ -48,19 +47,54 @@ int main() {
 }
 
 
-int fill_array(double ar[], int limit)
+double * fill_array(double *ar_pocz, double *ar_koniec)
 {
+	double temp = 0;
+	int i = 0;
+
+	while (ar_pocz < ar_koniec)
+	{
+		cout << "Podaj wartoœæ nr " << (i + 1) << ": ";
+		cin >> temp;
+
+		if(!cin)
+		{
+			cin.clear();
+
+			while (cin.get() != '\n');
+				cout << "Wprowadzono bledne dane - koniec programu.\n";
+
+			break;
+		}
+		else if (temp < 0)
+			break;
+		*ar_pocz = temp;
+		ar_pocz++;
+		i++;
+	}
+	return ar_pocz;
+}
+
+
+void show_array(const double *ar_pocz, const double *ar_kon)
+{
+	int i = 0;
+	while (ar_pocz < ar_kon)
+	{
+		cout << "Nieruchomoœæ nr " << (i + 1) << ": ";
+		cout << *ar_pocz << endl;
+		ar_pocz++;
+		i++;
+	}
 
 }
 
 
-void show_array(const double ar[], int n)
+void revalue(double r, double *ar, double *ar_kon)
 {
-
-}
-
-
-void revalue(double r, double ar[], int n)
-{
-
+	while (ar < ar_kon)
+	{
+		*ar = *ar * r;
+		ar++;
+	}
 }
