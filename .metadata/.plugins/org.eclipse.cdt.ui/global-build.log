@@ -1,1 +1,4 @@
-Info: Nothing to build for R7C8
+20:24:12 **** Rebuild of configuration Debug for project R7C9 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\R7C9.o" "..\\src\\R7C9.cpp" 
+g++ -o R7C9.exe "src\\R7C9.o" 
