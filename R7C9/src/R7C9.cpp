@@ -58,6 +58,8 @@ int main()
 	display3(students, opisanych_studentow);
 	cout << endl;
 
+	delete [] students;
+
 	return 0;
 }
 
