@@ -1,4 +1,5 @@
-21:32:41 **** Incremental Build of configuration Debug for project R7C9 ****
+21:39:10 **** Incremental Build of configuration Debug for project R7C10 ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\R7C9.o" "..\\src\\R7C9.cpp" 
-g++ -o R7C9.exe "src\\R7C9.o" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\R7C10.o" "..\\src\\R7C10.cpp" 
+g++ -o R7C10.exe "src\\R7C10.o" 
+Info: Nothing to build for R7C10
