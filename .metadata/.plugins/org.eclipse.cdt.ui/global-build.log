@@ -1,6 +1,5 @@
-20:05:24 **** Rebuild of configuration Debug for project R7C10 ****
+20:44:38 **** Incremental Build of configuration Debug for project R8L88 ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\R7C10.o" "..\\src\\R7C10.cpp" 
-g++ -o R7C10.exe "src\\R7C10.o" 
-Info: Nothing to build for R7C10
-Info: Nothing to build for R7C10
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\R8L88.o" "..\\src\\R8L88.cpp" 
+g++ -o R8L88.exe "src\\R8L88.o" 
+Info: Nothing to build for R8L88
