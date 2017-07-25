@@ -1,5 +1,5 @@
-20:44:38 **** Incremental Build of configuration Debug for project R8L88 ****
+23:00:40 **** Incremental Build of configuration Debug for project R13CD ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\R8L88.o" "..\\src\\R8L88.cpp" 
-g++ -o R8L88.exe "src\\R8L88.o" 
-Info: Nothing to build for R8L88
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\R13CD.o" "..\\src\\R13CD.cpp" 
+g++ -o R13CD.exe "src\\Cd.o" "src\\R13CD.o" 
+Info: Nothing to build for R13CD

@@ -1,0 +1,36 @@
+Po 113 krokach delikwent osiagnal polozenie:
+(x, y) : (19.2209, 5.93825)
+czyli
+(mag, ang) : (20.1173, 1.27115)
+Srednia dlugosc kroku pozornego = 0.178029
+----------------------------------------------------
+Po 124 krokach delikwent osiagnal polozenie:
+(x, y) : (-13.3985, 14.8999)
+czyli
+(mag, ang) : (20.0381, -0.732391)
+Srednia dlugosc kroku pozornego = 0.161598
+----------------------------------------------------
+Po 190 krokach delikwent osiagnal polozenie:
+(x, y) : (20.3541, -1.23157)
+czyli
+(mag, ang) : (20.3913, 1.63123)
+Srednia dlugosc kroku pozornego = 0.107323
+----------------------------------------------------
+Po 782 krokach delikwent osiagnal polozenie:
+(x, y) : (-17.8135, -10.7742)
+czyli
+(mag, ang) : (20.8183, -2.11476)
+Srednia dlugosc kroku pozornego = 0.0266219
+----------------------------------------------------
+Po 387291 krokach delikwent osiagnal polozenie:
+(x, y) : (396.395, -918.221)
+czyli
+(mag, ang) : (1000.13, 2.73406)
+Srednia dlugosc kroku pozornego = 0.00258237
+----------------------------------------------------
+Po 178 krokach delikwent osiagnal polozenie:
+(x, y) : (3.19551, -9.52664)
+czyli
+(mag, ang) : (10.0483, 2.81796)
+Srednia dlugosc kroku pozornego = 0.0564511
+----------------------------------------------------
