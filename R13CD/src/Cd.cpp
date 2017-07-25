@@ -10,11 +10,13 @@
 #include <iostream>
 	Cd::Cd(const char * wyk, const char* naz, int sel, double tlon)
 	{
-		std::strncpy(performers, wyk, 39);
-		performers[39] = '\0';
+		int len = strlen(wyk);
+		performers = new char [len+1];
+		std::strcpy(performers, wyk);
 
-		std::strncpy(label, naz, 19);
-		label[19] = '\0';
+		len = strlen(naz);
+		label = new char [len+1];
+		std::strcpy(label, naz);
 
 		selections = sel;
 		playtime = tlon;
@@ -22,11 +24,13 @@
 
 	Cd::Cd(const Cd & cd)
 	{
-		std::strncpy(performers, cd.performers, 39);
-		performers[39] = '\0';
+		int len = strlen(cd.performers);
+		performers = new char [len+1];
+		std::strcpy(performers, cd.performers);
 
-		std::strncpy(label, cd.label, 19);
-		label[19] = '\0';
+		len = strlen(cd.label);
+		label = new char [len+1];
+		std::strcpy(label, cd.label);
 
 		selections = cd.selections;
 		playtime = cd.playtime;
@@ -34,7 +38,9 @@
 
 	Cd::~Cd()
 	{
-
+		std::cout <<"DUPA w CD"<<std::endl;
+		delete [] performers;
+		delete [] label;
 	}
 
 	void Cd::report()
@@ -49,11 +55,13 @@
 			return *this;
 		else
 		{
-			std::strncpy(performers, cd.performers, 39);
-			performers[39] = '\0';
+			int len = strlen(cd.performers);
+			performers = new char [len+1];
+			std::strcpy(performers, cd.performers);
 
-			std::strncpy(label, cd.label, 19);
-			label[19] = '\0';
+			len = strlen(cd.label);
+			label = new char [len+1];
+			std::strcpy(label, cd.label);
 
 			selections = cd.selections;
 			playtime = cd.playtime;
@@ -64,25 +72,29 @@
 
 	Clasic::Clasic(const char * mT, const char * wyk, const char* naz, int sel, double tlon) : Cd(wyk, naz, sel, tlon)
 	{
-		std::strncpy(mainTheme, mT, 29);
-		mainTheme[29] = '\0';
+		int len = strlen(mT);
+		mainTheme = new char [len+1];
+		std::strcpy(mainTheme, mT);
 	}
 
 	Clasic::Clasic(const char * mT, const Cd & cd) : Cd(cd)
 	{
-		std::strncpy(mainTheme, mT, 29);
-		mainTheme[29] = '\0';
+		int len = strlen(mT);
+		mainTheme = new char [len+1];
+		std::strcpy(mainTheme, mT);
 	}
 
 	Clasic::Clasic(const Clasic & cl) : Cd(cl)
 	{
-		std::strncpy(mainTheme, cl.mainTheme, 29);
-		mainTheme[29] = '\0';
+		int len = strlen(cl.mainTheme);
+		mainTheme = new char [len+1];
+		std::strcpy(mainTheme, cl.mainTheme);
 	}
 
 	Clasic::~Clasic()
 	{
-
+		std::cout <<"DUPA w Clasic"<<std::endl;
+		delete [] mainTheme;
 	}
 
 	void Clasic::report()
@@ -98,8 +110,9 @@
 		else
 		{
 			Cd::operator=(cl);
-			std::strncpy(mainTheme, cl.mainTheme, 29);
-			mainTheme[29] = '\0';
+			int len = strlen(cl.mainTheme);
+			mainTheme = new char [len+1];
+			std::strcpy(mainTheme, cl.mainTheme);
 			return *this;
 		}
 	}

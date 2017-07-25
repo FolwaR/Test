@@ -11,8 +11,8 @@
 class Cd
 {
 private:
-	char performers[50];
-	char label[20];
+	char * performers;
+	char * label;
 	int selections;
 	double playtime;
 
@@ -29,7 +29,7 @@ public:
 class Clasic : public Cd
 {
 private:
-	char mainTheme[30];
+	char * mainTheme;
 public:
 	Clasic(const char * = "noName", const char * = "noName", const char* = "noName", int = 0, double = 0);
 	Clasic(const char *, const Cd &);
