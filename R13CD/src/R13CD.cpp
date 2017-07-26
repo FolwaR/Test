@@ -12,6 +12,7 @@ using namespace std;
 
 int main()
 {
+	
 	Cd c1("Bitelsi", "Stolica",14,35.5);
 	Clasic c2 = Clasic("Sonata krymska","Szopen", "Sony", 2, 57.14);
 
