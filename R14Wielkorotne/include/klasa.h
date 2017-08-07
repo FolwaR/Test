@@ -5,32 +5,32 @@ using std::string;
 
 class Worker
 {
-	protected:
+    private:
+		string fullname;
+		long id;
+       
+    protected:
 		virtual void Get();
 		virtual void Data();
 
-	private:
-		string fullname;
-		long id;
 	public:
 		Worker() : fullname("noName"), id(0.0)	{}
 		Worker(const string & n, long i) : fullname(n), id(i) {}
 		virtual ~Worker() {} = 0;
 		virtual void Set() = 0;
 		virtual void Show() const = 0;
-
 };
 
 
 class Waiter : virtual public Worker
 {
+	private:
+		int panche;	
+
 	protected:
 		virtual void Get();
 		virtual void Data();
-
-
-	private:
-		int panche;	
+    
 	public:
 		Waiter() : Worker(), panche(0) {}
 		Waiter(int pa, const string & n, long i) : Worker(n,i), panche(pa) {}
@@ -39,12 +39,15 @@ class Waiter : virtual public Worker
 	 
 		virtual void Set();
 		virtual void Show() const;
-
 };
 
 
 class Singer : virtual public Worker
 {
+    private:
+		static char *pv[Vtypes];
+        int tone;
+   
 	protected:
 		virtual void Get();
 		virtual void Data();
@@ -54,9 +57,6 @@ class Singer : virtual public Worker
 		enum { inny, alt, kontralt, sopran, bas, baryton, tenor };
 		enum { Vtypes = 7 };
 	
-    private:
-		static char *pv[Vtypes];
-        int tone;
     public:
         Singer() : Worker(), tone(inny) {}
         Singer(const string & n, long i, int tn = inny) : Worker(n,i), tone(tn) {}

@@ -50,7 +50,7 @@ Cow & Cow::operator=(Cow &)
 
 Cow::~Cow()
 {
-	delete [];
+	delete [] hobby;
 }
 
 
