@@ -19,7 +19,7 @@ Port::Port(const char * prod, const char * sty, int no)
 Port::Port(const Port & po)
 {
 	ile_sztuk++;
-	
+
 	producent = new char [strlen(po.producent)+1];
 	strcpy(producent, po.producent);
 
