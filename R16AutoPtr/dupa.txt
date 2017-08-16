@@ -1,0 +1,17 @@
+main.cpp: In function ‘int main()’:
+main.cpp:28:9: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+         auto_ptr<Klasa> aptr(new Klasa("DUPA"));
+         ^
+In file included from /usr/include/c++/5/memory:81:0,
+                 from main.cpp:2:
+/usr/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
+main.cpp:29:9: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+         auto_ptr<Klasa> aptr2;
+         ^
+In file included from /usr/include/c++/5/memory:81:0,
+                 from main.cpp:2:
+/usr/include/c++/5/bits/unique_ptr.h:49:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^
