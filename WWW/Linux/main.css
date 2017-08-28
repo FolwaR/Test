@@ -1,0 +1,122 @@
+body
+{
+	background-color: #404040;
+}
+h2
+{
+	font-size: 50px;
+}
+#container
+{
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: gray;
+	font-family: 'Ubuntu', sans-serif;
+}
+#logo
+{
+	margin-top: 20px;
+	background-color: gray;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 30px;
+	letter-spacing: 3px;
+	font-weight: 900px;
+}
+#menu
+{
+	
+	background-color: #303030;
+	color: white;
+	padding: 15px;
+}
+.option
+{
+
+	margin: auto;
+	text-align: center;
+	float: left;
+	min-width: 196px;
+	height: 25;
+	font-size: 18px;
+	padding: 15px;
+	opacity: 0.6;
+}
+.option:hover
+{
+	background-color: darkorange;
+	cursor: pointer;
+}
+
+#topbar
+{
+	margin-top: 15px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: orange;
+	min-height: 120px;
+}
+#topbarL
+{
+	float: left;
+	padding: 10px;
+	border-right: 4px dotted #000000;
+}
+#topbarR
+{
+	float: left;
+	padding: 10px;
+	text-align:justify;
+	margin-left:40px;
+}
+#sidebar
+{
+	margin-top: 10px;
+	float: left;
+	min-height: 600px;
+	width: 262px;
+	background-color: #303030;
+	padding: 9px;
+	color: white;
+	border-right: 4px dotted white;
+}
+.soption
+{
+	background-color: #303030;
+	margin-bottom:20px;
+	padding: 10px;
+	font-size: 18px;
+	min-width: 196px;
+	opacity: 0.5;
+	
+	border-bottom: 4px solid white;
+}
+.soption:hover
+{
+	cursor: pointer;
+	background-color: darkorange;
+	color: white;
+}
+#content
+{
+	float: left;
+	width: 1095px;
+	background-color: gray;
+	padding: 10px;
+	min-height: 600px;
+	text-align:justify;
+}
+#footer
+{
+	clear: both;
+	padding: 10px;
+	min-height: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+	color: white;
+	text-align: center;
+	background-color: #555555;
+
+}
