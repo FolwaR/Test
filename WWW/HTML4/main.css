@@ -1,0 +1,111 @@
+body
+{
+    background-image: url("tlo.png");
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin: 0px;
+}
+a:link
+{
+    color:#000000;
+    text-decoration: none;
+}
+a:visited
+{
+    color:#000000;
+    text-decoration: none;
+}
+a:hover
+{
+    color:#999999;
+    text-decoration: underline;
+}
+a:active
+{
+    color:#000000;
+    text-decoration: none; 
+}
+#logo
+{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    margin-top:25px;
+    padding: 5px 0px 5px 0px;
+    letter-spacing: 3px;
+    border-bottom: 5px solid gray;
+    text-shadow: 
+    1px 1px 0 gray,
+    -1px 1px 0 gray,  
+    -1px -1px 0 gray,
+    1px -1px 0 gray;
+    
+}
+#container
+{
+    margin-top:40px;
+    width: 970px;;
+    background-color: white;
+    color: wheat;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 5px solid black;
+        
+}
+#spis
+{
+    color:black;
+    text-transform: none !important;
+    
+}
+ol
+{
+    margin-top: 5px;    
+}
+ol > li
+{
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+ol > li > ul
+{
+    text-transform: none !important;
+    font-weight: 400;
+    padding: 0;
+    letter-spacing: normal;
+    margin-top: 5px;
+}
+ol > li > ul > li
+{
+    margin: 0px;
+}
+.slajd
+{
+    padding: 20px 40px;
+    text-align: justify;
+    color: black;
+}
+h1
+{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.scrollup
+{
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background: url("img/up.png") no-repeat 0px 0px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+}
