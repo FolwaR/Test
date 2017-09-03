@@ -1,0 +1,19 @@
+bob
+job=>'softw'
+age=>24
+name=>'Bob Shmit'
+pay=>10000
+endrec.
+sue
+job=>'hardw'
+age=>40
+name=>'Sue Brown'
+pay=>10000
+endrec.
+tom
+job=>'noName'
+age=>27
+name=>'Tom Hardy'
+pay=>1705
+endrec.
+enddb
