@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+    <head>
+        <title>Moja strona</title>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Opis witryny"/>
+        <meta name="keywords" content="slowa,kluczowe"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div id="container">
+            <form method=POST action="cgi-bin/cgi101.py">
+			     <input type="text" name=user placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">			
+			     <input type="password" name=passwd placeholder="Hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
+			     <input type="submit" value="Zaloguj się">
+		    </form>
+        </div>
+        
+    </body>
+</html>
